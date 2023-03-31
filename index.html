@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pixel to Rem Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact">About</a></li>
+            <li><a href="Terms">Contact</a></li>
+            <li><a href="/privacy-policy">privacy</a></li>
+        </ul>
+    </nav>
+    <div class="box">
+        <div class="square" style="--i:0;"></div>
+        <div class="square" style="--i:1;"></div>
+        <div class="square" style="--i:2;"></div>
+        <div class="square" style="--i:3;"></div>
+        <div class="square" style="--i:4;"></div>
+        <div class="square" style="--i:5;"></div>
+
+        <div class="container">
+            <div class="card">
+                <h1>Pixel to Rem Converter</h1>
+                <p>Based on a root font-size of
+                    <input type="text" value="16" id="base-value">
+
+
+                    pixel.
+                </p>
+                <div>
+                    <label for="px-input" class="input-label">Enter value in pixels:</label>
+                    <input type="number" id="px" value="10">
+                    <div class="error" id="px-error"></div>
+                </div>
+                <div>
+                    <label for="rem-input" class="input-label">Enter value in rems:</label>
+                    <input type="number" id="rem" value="0.063">
+                    <div class="error" id="rem-error"></div>
+                </div>
+                <div class="result">
+                    <label class="result-label">Result:</label>
+                    <input type="text" id="result" class="result-field" readonly>
+                </div>
+            </div>
+        </div>
+        <h2>Pixel to Rem Conversion for Popular Font Sizes</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Pixel (px)</th>
+                    <th>Rem (rem)</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>12px</td>
+                    <td>0.75rem</td>
+                    <td>Typically used for small text or icons.</td>
+                </tr>
+                <tr>
+                    <td>14px</td>
+                    <td>0.875rem</td>
+                    <td>Commonly used for body text.</td>
+                </tr>
+                <tr>
+                    <td>16px</td>
+                    <td>1rem</td>
+                    <td>The default font size for most browsers.</td>
+                </tr>
+                <tr>
+                    <td>18px</td>
+                    <td>1.125rem</td>
+                    <td>Used for subheadings or larger body text.</td>
+                </tr>
+                <tr>
+                    <td>20px</td>
+                    <td>1.25rem</td>
+                    <td>Used for headings or larger text blocks.</td>
+                </tr>
+                <tr>
+                    <td>24px</td>
+                    <td>1.5rem</td>
+                    <td>Used for large headings or section titles.</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+        <h2>Complete PX to REM Conversion Table for 1 to 100</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Pixel</th>
+                    <th>Rem</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1px</td>
+                    <td>0.063rem</td>
+                </tr>
+                <tr>
+                    <td>2px</td>
+                    <td>0.125rem</td>
+                </tr>
+                <tr>
+                    <td>3px</td>
+                    <td>0.188rem</td>
+                </tr>
+                <tr>
+                    <td>4px</td>
+                    <td>0.250rem</td>
+                </tr>
+                <tr>
+                    <td>5px</td>
+                    <td>0.313rem</td>
+                </tr>
+                <tr>
+                    <td>6px</td>
+                    <td>0.375rem</td>
+                </tr>
+                <tr>
+                    <td>7px</td>
+                    <td>0.438rem</td>
+                </tr>
+                <tr>
+                    <td>8px</td>
+                    <td>0.500rem</td>
+                </tr>
+                <tr>
+                    <td>9px</td>
+                    <td>0.563rem</td>
+                </tr>
+                <tr>
+                    <td>10px</td>
+                    <td>0.625rem</td>
+                </tr>
+                <tr>
+                    <td>11px</td>
+                    <td>0.688rem</td>
+                </tr>
+                <tr>
+                    <td>12px</td>
+                    <td>0.750rem</td>
+                </tr>
+                <tr>
+                    <td>13px</td>
+                    <td>0.813rem</td>
+                </tr>
+                <tr>
+                    <td>14px</td>
+                    <td>0.875rem</td>
+                </tr>
+                <tr>
+                    <td>15px</td>
+                    <td>0.938rem</td>
+                </tr>
+                <tr>
+                    <td>16px</td>
+                    <td>1.000rem</td>
+                </tr>
+                <tr>
+                    <td>17px</td>
+                    <td>1.063rem</td>
+                </tr>
+                <tr>
+                    <td>18px</td>
+                    <td>1.125rem</td>
+                </tr>
+                <tr>
+                    <td>19px</td>
+                    <td>1.188rem</td>
+                </tr>
+                <tr>
+                    <td>20px</td>
+                    <td>1.250rem</td>
+                </tr>
+                <tr>
+                    <td>21px</td>
+                    <td>1.313rem</td>
+                </tr>
+                <tr>
+                    <td>22px</td>
+                    <td>1.375rem</td>
+                </tr>
+                <tr>
+                    <td>23px</td>
+                    <td>1.438rem</td>
+                </tr>
+                <tr>
+                    <td>24px</td>
+                    <td>1.500rem</td>
+                </tr>
+                <tr>
+                    <td>25px</td>
+                    <td>1.563rem</td>
+                </tr>
+                <tr>
+                    <td>26px</td>
+                    <td>1.625rem</td>
+                </tr>
+                <tr>
+                    <td>27px</td>
+                    <td>1.688rem</td>
+                </tr>
+                <tr>
+                    <td>28px</td>
+                    <td>1.750rem</td>
+                </tr>
+                <tr>
+                    <td>29px</td>
+                    <td>1.813rem</td>
+                </tr>
+                <tr>
+                    <td>30px</td>
+                    <td>1.875rem</td>
+                </tr>
+                <tr>
+                    <td>31px</td>
+                    <td>1.938rem</td>
+                </tr>
+                <tr>
+                    <td>32px</td>
+                    <td>2.000rem</td>
+                </tr>
+                <tr>
+                    <td>33px</td>
+                    <td>2.063rem</td>
+                </tr>
+                <tr>
+                    <td>34px</td>
+                    <td>2.125rem</td>
+                </tr>
+                <tr>
+                    <td>35px</td>
+                    <td>2.188rem</td>
+                </tr>
+                <tr>
+                    <td>36px</td>
+                    <td>2.250rem</td>
+                </tr>
+                <tr>
+                    <td>37px</td>
+                    <td>2.313rem</td>
+                </tr>
+                <tr>
+                    <td>38px</td>
+                    <td>2.375rem</td>
+                </tr>
+                <tr>
+                    <td>39px</td>
+                    <td>2.438rem</td>
+                </tr>
+                <tr>
+                    <td>40px</td>
+                    <td>2.500rem</td>
+                </tr>
+                <tr>
+                    <td>41px</td>
+                    <td>2.563rem</td>
+                </tr>
+                <tr>
+                    <td>42px</td>
+                    <td>2.625rem</td>
+                </tr>
+                <tr>
+                    <td>43px</td>
+                    <td>2.688rem</td>
+                </tr>
+                <tr>
+                    <td>44px</td>
+                    <td>2.750rem</td>
+                </tr>
+                <tr>
+                    <td>45px</td>
+                    <td>2.813rem</td>
+                </tr>
+                <tr>
+                    <td>46px</td>
+                    <td>2.875rem</td>
+                </tr>
+                <tr>
+                    <td>47px</td>
+                    <td>2.938rem</td>
+                </tr>
+                <tr>
+                    <td>48px</td>
+                    <td>3.000rem</td>
+                </tr>
+                <tr>
+                    <td>49px</td>
+                    <td>3.063rem</td>
+                </tr>
+                <tr>
+                    <td>50px</td>
+                    <td>3.125rem</td>
+                </tr>
+                <tr>
+                    <td>51px</td>
+                    <td>3.188rem</td>
+                </tr>
+                <tr>
+                    <td>52px</td>
+                    <td>3.250rem</td>
+                </tr>
+                <tr>
+                    <td>53px</td>
+                    <td>3.313rem</td>
+                </tr>
+                <tr>
+                    <td>54px</td>
+                    <td>3.375rem</td>
+                </tr>
+                <tr>
+                    <td>55px</td>
+                    <td>3.438rem</td>
+                </tr>
+                <tr>
+                    <td>56px</td>
+                    <td>3.500rem</td>
+                </tr>
+                <tr>
+                    <td>57px</td>
+                    <td>3.563rem</td>
+                </tr>
+                <tr>
+                    <td>58px</td>
+                    <td>3.625rem</td>
+                </tr>
+                <tr>
+                    <td>59px</td>
+                    <td>3.688rem</td>
+                </tr>
+                <tr>
+                    <td>60px</td>
+                    <td>3.750rem</td>
+                </tr>
+                <tr>
+                    <td>61px</td>
+                    <td>3.813rem</td>
+                </tr>
+                <tr>
+                    <td>62px</td>
+                    <td>3.875rem</td>
+                </tr>
+                <tr>
+                    <td>63px</td>
+                    <td>3.938rem</td>
+                </tr>
+                <tr>
+                    <td>64px</td>
+                    <td>4.000rem</td>
+                </tr>
+                <tr>
+                    <td>65px</td>
+                    <td>4.063rem</td>
+                </tr>
+                <tr>
+                    <td>66px</td>
+                    <td>4.125rem</td>
+                </tr>
+                <tr>
+                    <td>67px</td>
+                    <td>4.188rem</td>
+                </tr>
+                <tr>
+                    <td>68px</td>
+                    <td>4.250rem</td>
+                </tr>
+                <tr>
+                    <td>69px</td>
+                    <td>4.313rem</td>
+                </tr>
+                <tr>
+                    <td>70px</td>
+                    <td>4.375rem</td>
+                </tr>
+                <tr>
+                    <td>71px</td>
+                    <td>4.438rem</td>
+                </tr>
+                <tr>
+                    <td>72px</td>
+                    <td>4.500rem</td>
+                </tr>
+                <tr>
+                    <td>73px</td>
+                    <td>4.563rem</td>
+                </tr>
+                <tr>
+                    <td>74px</td>
+                    <td>4.625rem</td>
+                </tr>
+                <tr>
+                    <td>75px</td>
+                    <td>4.688rem</td>
+                </tr>
+                <tr>
+                    <td>76px</td>
+                    <td>4.750rem</td>
+                </tr>
+                <tr>
+                    <td>77px</td>
+                    <td>4.813rem</td>
+                </tr>
+                <tr>
+                    <td>78px</td>
+                    <td>4.875rem</td>
+                </tr>
+                <tr>
+                    <td>79px</td>
+                    <td>4.938rem</td>
+                </tr>
+                <tr>
+                    <td>80px</td>
+                    <td>5.000rem</td>
+                </tr>
+                <tr>
+                    <td>81px</td>
+                    <td>5.063rem</td>
+                </tr>
+                <tr>
+                    <td>82px</td>
+                    <td>5.125rem</td>
+                </tr>
+                <tr>
+                    <td>83px</td>
+                    <td>5.188rem</td>
+                </tr>
+                <tr>
+                    <td>84px</td>
+                    <td>5.250rem</td>
+                </tr>
+                <tr>
+                    <td>85px</td>
+                    <td>5.313rem</td>
+                </tr>
+                <tr>
+                    <td>86px</td>
+                    <td>5.375rem</td>
+                </tr>
+                <tr>
+                    <td>87px</td>
+                    <td>5.438rem</td>
+                </tr>
+                <tr>
+                    <td>88px</td>
+                    <td>5.500rem</td>
+                </tr>
+                <tr>
+                    <td>89px</td>
+                    <td>5.563rem</td>
+                </tr>
+                <tr>
+                    <td>90px</td>
+                    <td>5.625rem</td>
+                </tr>
+                <tr>
+                    <td>91px</td>
+                    <td>5.688rem</td>
+                </tr>
+                <tr>
+                    <td>92px</td>
+                    <td>5.750rem</td>
+                </tr>
+                <tr>
+                    <td>93px</td>
+                    <td>5.813rem</td>
+                </tr>
+                <tr>
+                    <td>94px</td>
+                    <td>5.875rem</td>
+                </tr>
+                <tr>
+                    <td>95px</td>
+                    <td>5.938rem</td>
+                </tr>
+                <tr>
+                    <td>96px</td>
+                    <td>6.000rem</td>
+                </tr>
+                <tr>
+                    <td>97px</td>
+                    <td>6.063rem</td>
+                </tr>
+                <tr>
+                    <td>98px</td>
+                    <td>6.125rem</td>
+                </tr>
+                <tr>
+                    <td>99px</td>
+                    <td>6.188rem</td>
+                </tr>
+                <tr>
+                    <td>100px</td>
+                    <td>6.250rem</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+
+</body>
+
+</html>
