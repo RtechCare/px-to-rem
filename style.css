@@ -69,7 +69,7 @@ body {
     /* background-color: #f2f2f2; */
     /* margin: 0;
     padding: 0; */
-    background: linear-gradient(45deg, #bce5f5, #f5d0bc);
+    background: red;
     background-attachment: fixed;
     animation: gradient 10s ease infinite;
     min-height: 100vh;
@@ -286,7 +286,7 @@ td {
 }
 
 thead tr {
-    background-color: red;
+    background-color: #f2f2f2ad;
     border-bottom: 2px solid #ddd;
 }
 
