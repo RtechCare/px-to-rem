@@ -272,6 +272,7 @@ input[type=number]:focus {
 
 table {
     border-collapse: collapse;
+    border-radius: 8px;
     width: 100%;
     max-width: 800px;
     margin: 50px auto;
@@ -330,6 +331,13 @@ td:nth-child(2) {
 
     nav a {
         font-size: 0.9rem;
+        padding: 5px 10px 4px 10px;
+    }
+    nav a:hover {
+        padding: 0;
+        border: 2px solid #fff;
+        padding: 5px 10px 4px 10px;
+        transition: all 0.3s ease;
     }
 
 
